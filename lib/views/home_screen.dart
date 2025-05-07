@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(height: 50),
                 CircleAvatar(
                   radius: 85,
-                  backgroundImage: AssetImage('assets/image.png'),
+                  backgroundImage: AssetImage('assets/avatar.jpeg'),
                 ),
                 SizedBox(height: 16),
               ],
@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              height: MediaQuery.of(context).size.height * 0.5,
+              height: 350,
               width: double.infinity,
               padding: const EdgeInsets.all(20),
               decoration: const BoxDecoration(
@@ -130,8 +130,18 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   Row(
+                  
                     children: const [
+                      Icon(
+                        Icons.info,
+                        color: Colors.blue,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      
                       Text(
+                  
                         'Behance  ',
                         style: TextStyle(
                           fontSize: 16,
@@ -145,6 +155,10 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: 10),
                   Row(
                     children: const [
+                      Icon(Icons.email_outlined,
+                      color: Colors.blue,),
+                      SizedBox(width: 10,),
+
                       Text(
                         'Email  ',
                         style: TextStyle(
@@ -162,6 +176,10 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: 10),
                   Row(
                     children: const [
+                      Icon(Icons.mobile_friendly_sharp,
+                      color: Colors.blue,
+                ),
+                SizedBox(width: 10,),
                       Text(
                         'Mobile  ',
                         style: TextStyle(
@@ -176,6 +194,11 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: 10),
                   Row(
                     children: const [
+                      Icon(Icons.network_cell,
+                      color: Colors.blue,),
+                      SizedBox(
+                        width: 10,
+                      ),
                       Text(
                         'LinkedIn  ',
                         style: TextStyle(
